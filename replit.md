@@ -8,6 +8,18 @@ Unmapped is a modern web application designed for remote workers to discover cur
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes (Latest)
+
+### Design Update - January 2025
+- Updated brand colors to: #1e3d59 (navy), #f5f0e1 (beige), #ac0000 (red), #444440 (charcoal)
+- Changed font to CMU Serif throughout the application
+- Implemented new logo (NEW UNMAPPED_1753819852900.png)
+- Added subtle globe background pattern
+- Made buttons square (rounded-sm) instead of rounded
+- Simplified social media section to outline icons only
+- Centered join waitlist button and removed secondary text
+- Updated favicon and meta tags for new branding
+
 ## System Architecture
 
 This is a full-stack TypeScript application built with a modern React frontend and Express.js backend, designed for deployment on Replit with PostgreSQL database integration.
