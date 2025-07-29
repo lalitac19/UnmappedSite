@@ -43,7 +43,7 @@ export default function Home() {
             Remote working,<br />
             <span className="brand-red">With Benefits</span>
           </h1>
-          <p className="text-xl lg:text-2xl brand-navy mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl lg:text-2xl brand-navy mb-12 max-w-3xl mx-auto leading-relaxed secondary-font">
             Making WFH more interesting; one café at a time.
           </p>
           <div className="flex justify-center mb-16">

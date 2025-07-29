@@ -69,6 +69,10 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  
+  .secondary-font {
+    font-family: 'Quattrocento', serif;
+  }
 }
 
 @layer utilities {
