@@ -24,6 +24,9 @@ export default function Home() {
               className="w-16 h-16 object-contain"
             />
           </div>
+          <div className="absolute left-1/2 transform -translate-x-1/2">
+            <span className="text-2xl font-bold brand-navy tracking-wide">UNMAPPED</span>
+          </div>
           <Button 
             onClick={handleJoinWaitlist}
             className="bg-brand-red hover:opacity-90 text-white px-6 py-3 rounded-sm font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
