@@ -64,14 +64,14 @@ export default function Home() {
               onClick={() => handleSocialClick('instagram', 'https://www.instagram.com/unmapped.club')}
               className="group transition-all duration-200 hover:scale-110"
             >
-              <Instagram className="w-8 h-8 brand-navy stroke-2 hover:brand-red transition-colors duration-200" />
+              <Instagram className="w-8 h-8 brand-red stroke-2 hover:opacity-80 transition-all duration-200" style={{ strokeLinejoin: 'miter', strokeLinecap: 'square' }} />
             </button>
             
             <button
               onClick={() => handleSocialClick('linkedin', 'https://www.linkedin.com/company/unmapped-community')}
               className="group transition-all duration-200 hover:scale-110"
             >
-              <Linkedin className="w-8 h-8 brand-navy stroke-2 hover:brand-red transition-colors duration-200" />
+              <Linkedin className="w-8 h-8 brand-red stroke-2 hover:opacity-80 transition-all duration-200" style={{ strokeLinejoin: 'miter', strokeLinecap: 'square' }} />
             </button>
           </div>
         </section>
