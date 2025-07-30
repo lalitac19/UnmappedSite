@@ -76,6 +76,15 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      {/* Footer */}
+      <footer className="w-full py-6 px-4 sm:px-6 lg:px-8 mt-12 border-t border-brand-navy/10">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-brand-charcoal/70 text-sm">
+            © 2025, Unmapped. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
