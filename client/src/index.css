@@ -65,13 +65,26 @@
     color: var(--brand-navy);
     font-family: 'CMU Serif', 'Computer Modern', serif;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400' width='400' height='400'%3E%3Cg fill='none' stroke='%23d4c8b5' stroke-width='1' opacity='0.15'%3E%3Ccircle cx='200' cy='200' r='180'/%3E%3Cpath d='M50 200c30-20 60-10 90 10s60 30 90 10 60-40 90-20'/%3E%3Cpath d='M50 160c40-15 80 5 120 15s80 20 120-5 80-35 90-15'/%3E%3Cpath d='M50 240c35-25 70-5 105 20s70 25 105 0 70-30 85-10'/%3E%3Cpath d='M80 120c45-10 90 10 135 25s90 15 135-10'/%3E%3Cpath d='M80 280c40-20 80 0 120 25s80 20 120-5'/%3E%3C/g%3E%3C/svg%3E");
-    background-size: 600px 600px;
+    background-size: 400px 400px;
     background-position: center;
     background-repeat: no-repeat;
   }
   
+  @media (min-width: 768px) {
+    body {
+      background-size: 600px 600px;
+    }
+  }
+  
   .secondary-font {
     font-family: 'Quattrocento', serif;
+  }
+  
+  /* Mobile-first responsive design */
+  @media (max-width: 640px) {
+    .secondary-font {
+      line-height: 1.6;
+    }
   }
 }
 

@@ -15,21 +15,21 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-brand-beige">
       {/* Header */}
-      <header className="w-full py-6 px-4 sm:px-6 lg:px-8">
-        <nav className="max-w-7xl mx-auto flex justify-between items-center">
+      <header className="w-full py-4 sm:py-6 px-4 sm:px-6 lg:px-8">
+        <nav className="max-w-7xl mx-auto flex justify-between items-center relative">
           <div className="flex items-center space-x-3">
             <img 
               src={logoImage} 
               alt="Unmapped Logo" 
-              className="w-16 h-16 object-contain"
+              className="w-12 h-12 md:w-16 md:h-16 object-contain"
             />
           </div>
-          <div className="absolute left-1/2 transform -translate-x-1/2">
-            <span className="text-2xl font-bold brand-navy tracking-wide">UNMAPPED</span>
+          <div className="absolute left-1/2 transform -translate-x-1/2 hidden sm:block">
+            <span className="text-xl md:text-2xl font-bold brand-navy tracking-wide">UNMAPPED</span>
           </div>
           <Button 
             onClick={handleJoinWaitlist}
-            className="bg-brand-red hover:opacity-90 text-white px-6 py-3 rounded-sm font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+            className="bg-brand-red hover:opacity-90 text-white px-4 py-2 md:px-6 md:py-3 rounded-sm font-semibold text-sm md:text-base transition-all duration-200 shadow-lg hover:shadow-xl"
           >
             Join Waitlist
           </Button>
@@ -38,18 +38,18 @@ export default function Home() {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <section className="text-center py-16 lg:py-24">
-          <h1 className="text-5xl lg:text-7xl font-bold brand-navy mb-8 leading-tight">
+        <section className="text-center py-8 sm:py-16 lg:py-24 px-4">
+          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold brand-navy mb-6 sm:mb-8 leading-tight">
             Remote working,<br />
             <span className="brand-red">With Benefits</span>
           </h1>
-          <p className="text-xl lg:text-2xl brand-navy mb-12 max-w-3xl mx-auto leading-relaxed secondary-font">
+          <p className="text-lg sm:text-xl lg:text-2xl brand-navy mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed secondary-font px-4">
             Making WFH more interesting; one café at a time.
           </p>
-          <div className="flex justify-center mb-16">
+          <div className="flex justify-center mb-8 sm:mb-16">
             <Button 
               onClick={handleJoinWaitlist}
-              className="bg-brand-red hover:opacity-90 text-white px-10 py-4 rounded-sm text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="bg-brand-red hover:opacity-90 text-white px-8 py-3 sm:px-10 sm:py-4 rounded-sm text-base sm:text-lg font-semibold transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Join Waitlist
             </Button>
@@ -57,21 +57,21 @@ export default function Home() {
         </section>
 
         {/* Social Links */}
-        <section className="py-16 text-center border-t brand-charcoal border-opacity-20">
-          <h2 className="text-3xl font-bold brand-navy mb-8">Follow us</h2>
-          <div className="flex justify-center space-x-12">
+        <section className="py-8 sm:py-16 text-center border-t brand-charcoal border-opacity-20">
+          <h2 className="text-2xl sm:text-3xl font-bold brand-navy mb-6 sm:mb-8">Follow us</h2>
+          <div className="flex justify-center space-x-8 sm:space-x-12">
             <button
               onClick={() => handleSocialClick('instagram', 'https://www.instagram.com/unmapped.club')}
-              className="group transition-all duration-200 hover:scale-110"
+              className="group transition-all duration-200 hover:scale-110 p-2"
             >
-              <Instagram className="w-8 h-8 brand-red stroke-2 hover:opacity-80 transition-all duration-200" style={{ strokeLinejoin: 'miter', strokeLinecap: 'square' }} />
+              <Instagram className="w-6 h-6 sm:w-8 sm:h-8 brand-red stroke-2 hover:opacity-80 transition-all duration-200" style={{ strokeLinejoin: 'miter', strokeLinecap: 'square' }} />
             </button>
             
             <button
               onClick={() => handleSocialClick('linkedin', 'https://www.linkedin.com/company/unmapped-community')}
-              className="group transition-all duration-200 hover:scale-110"
+              className="group transition-all duration-200 hover:scale-110 p-2"
             >
-              <Linkedin className="w-8 h-8 brand-red stroke-2 hover:opacity-80 transition-all duration-200" style={{ strokeLinejoin: 'miter', strokeLinecap: 'square' }} />
+              <Linkedin className="w-6 h-6 sm:w-8 sm:h-8 brand-red stroke-2 hover:opacity-80 transition-all duration-200" style={{ strokeLinejoin: 'miter', strokeLinecap: 'square' }} />
             </button>
           </div>
         </section>

@@ -19,6 +19,11 @@ Preferred communication style: Simple, everyday language.
 - Simplified social media section to outline icons only
 - Centered join waitlist button and removed secondary text
 - Updated favicon and meta tags for new branding
+- Added Quattrocento as secondary font for tagline
+- Made website fully mobile-responsive with adaptive layouts
+- Implemented responsive typography and spacing for all screen sizes
+- Added touch-friendly button sizes and improved mobile navigation
+- Optimized background image sizing for mobile devices
 
 ## System Architecture
 
