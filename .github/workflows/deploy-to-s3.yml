@@ -1,4 +1,4 @@
-name: Build and Deploy to S3
+name: Build and Deploy Frontend to S3
 
 on:
   push:
@@ -21,10 +21,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build the site
+      - name: Build frontend and backend
         run: npm run build
 
-      - name: Deploy to S3
+      - name: Deploy frontend to S3
         uses: jakejarvis/s3-sync-action@v0.5.1
         with:
           args: --delete
