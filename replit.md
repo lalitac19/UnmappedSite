@@ -117,6 +117,21 @@ This is a full-stack TypeScript application built with a modern React frontend a
 - **Database**: Drizzle migrations applied via `db:push` command
 - **Deployment**: Single Node.js process serving both API and static files
 
+### Deployment Configuration (IMPORTANT)
+**Required .replit Settings for Deployment:**
+```
+[deployment]
+deploymentTarget = "autoscale"
+build = ["npm", "run", "build"]
+run = ["npm", "start"]
+```
+
+**Why Autoscale is Required:**
+- This is an Express.js application that needs a server to run
+- Static deployment cannot handle API routes or dynamic content
+- The server serves both API endpoints and static frontend files
+- Frontend files are built to `dist/public` and served by Express in production
+
 ### Environment Configuration
 - **DATABASE_URL**: PostgreSQL connection string (required)
 - **NODE_ENV**: Environment detection for development/production modes
@@ -128,7 +143,9 @@ This is a full-stack TypeScript application built with a modern React frontend a
 ├── server/          # Express.js backend application
 ├── shared/          # Shared TypeScript types and schemas
 ├── dist/            # Production build output
+│   ├── index.js     # Compiled server bundle
+│   └── public/      # Frontend static assets
 └── migrations/      # Database migration files
 ```
 
-The architecture emphasizes type safety, developer experience, and scalability while maintaining simplicity for rapid development and deployment on Replit's platform.
+The architecture emphasizes type safety, developer experience, and scalability while maintaining simplicity for rapid development and deployment.eployment on Replit's platform.
