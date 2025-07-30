@@ -1,4 +1,4 @@
-name: Build and Deploy Frontend to S3
+name: Build and Deploy to S3
 
 on:
   push:
@@ -22,7 +22,9 @@ jobs:
         run: npm install
 
       - name: Build frontend and backend
-        run: npm run build
+        run: |
+          vite build
+          esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist-server
 
       - name: Deploy frontend to S3
         uses: jakejarvis/s3-sync-action@v0.5.1
@@ -33,4 +35,4 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: us-east-1
-          SOURCE_DIR: .
+          SOURCE_DIR: dist
